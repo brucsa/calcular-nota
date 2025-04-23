@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f7ed;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+h1 {
+    color: #FFB400;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #FFB400;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #F6511D;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

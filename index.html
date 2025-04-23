@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calcular Nota</title>
+
+</head>
+
+<body>
+    <h1>Calcular Nota Final</h1>
+    <form action="processador.php" method="post">
+        <label for="nota1">Nota 1</label>
+        <input type="number" name="nota1" id="nota1" min="0" max="10" required>
+
+        <label for="nota2">Nota 2</label>
+        <input type="number" name="nota2" id="nota2" min="0" max="10" required>
+
+        <label for="nota3">Nota 3</label>
+        <input type="number" name="nota3" id="nota3" min="0" max="10" required>
+
+        <label for="nota4">Nota 4</label>
+        <input type="number" name="nota4" id="nota4" min="0" max="10" required>
+
+        <button onclick="media()">Calcular Média</button>
+
+        <div id="resultado"></div>
+    </form>
+    <script>
+        // Valores das Notas
+        function media() {
+            const n1 = Number(document.getElementById("nota1").value)
+            const n2 = Number(document.getElementById("nota2").value)
+            const n3 = Number(document.getElementById("nota3").value)
+            const n4 = Number(document.getElementById("nota4").value)
+
+            // Calcular Média
+            let soma = (n1 + n2 + n3 + n4) / 4
+
+            // Resultado
+            const status = soma < 6 ? "REPROVADO" : "APROVADO";
+            resultado.innerText = `Sua média é ${soma.toFixed(2)}. Você está ${status}.`;
+            resultado.style.color = soma < 6 ? "#F6511D" : "#59CD90";
+        }
+    </script>
+</body>
+
+</html>
