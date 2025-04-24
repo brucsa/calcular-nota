@@ -6,10 +6,11 @@ body {
     background-color: #f1f7ed;
 }
 
-form {
+section {
     display: flex;
     flex-direction: column;
     width: 200px;
+    font-size: 20px;
 }
 
 h1 {
@@ -35,7 +36,7 @@ button:hover {
 
 #resultado {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }

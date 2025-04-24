@@ -11,7 +11,7 @@ O projeto consiste em uma página web interativa que utiliza HTML para a estrutu
 * **Interface de Entrada:** Formulário com campos para inserir quatro notas.
 * **Validação de Entrada:** Os campos de nota aceitam apenas valores numéricos entre 0 e 10.
 * **Cálculo Automático:** Ao clicar no botão "Calcular Média", a média das quatro notas é calculada instantaneamente.
-* **Feedback Visual:** A média é exibida na tela, juntamente com o status ("APROVADO" ou "REPROVADO") em cores diferentes (verde para aprovado, alaranjado para reprovado).
+* **Feedback Visual:** A média é exibida na tela, juntamente com o status ("APROVADO" ou "REPROVADO") em cores diferentes (verde para aprovado, vermelho para reprovado).
 
 ## Tecnologias Utilizadas
 
